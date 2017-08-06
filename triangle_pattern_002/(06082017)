@@ -1,0 +1,27 @@
+Triangle pattern-002
+
+#include<stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int n, star=1, stick=0;
+ 
+    scanf("%d",&n);
+  for(int i=0;star<=n;i++){
+      for(int j=0;j<(n-1)/2-stick;j++){
+          printf("!");
+      }
+      for(int j=1;j<=star;j++){
+          printf("*");
+          }
+    
+    for(int j=0; j<(n-1)/2-stick;j++)
+     printf("!");
+printf("\n");
+star+=2;
+stick++;
+  }
+  return 0;
+
+}
